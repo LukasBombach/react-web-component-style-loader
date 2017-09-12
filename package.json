@@ -1,8 +1,8 @@
 {
-  "name": "style-loader",
-  "version": "0.18.2",
-  "author": "Tobias Koppers @sokra",
-  "description": "style loader module for webpack",
+  "name": "react-web-component-style-loader",
+  "version": "0.1.3-alpha",
+  "author": "Lukas Bombach",
+  "description": "Style loader module for react-web-component",
   "engines": {
     "node": ">= 0.12.0"
   },
@@ -11,6 +11,7 @@
     "lib",
     "url.js",
     "index.js",
+    "exports.js",
     "useable.js",
     "options.json"
   ],
@@ -32,9 +33,6 @@
     "travis:test": "yarn run test",
     "release": "yarn run standard-version"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:webpack/style-loader.git"
-  },
+  "repository": "WeltN24/react-web-component-style-loader",
   "license": "MIT"
 }
