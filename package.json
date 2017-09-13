@@ -1,6 +1,6 @@
 {
   "name": "react-web-component-style-loader",
-  "version": "0.1.3-alpha",
+  "version": "0.1.4-alpha",
   "author": "Lukas Bombach",
   "description": "Style loader module for react-web-component",
   "engines": {
