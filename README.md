@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
-    <img alt="React Web Component Logo" src="https://raw.githubusercontent.com/WeltN24/react-web-component-style-loader/master/docs/images/react-web-component-logo.png" height="200">
+  </a><a href="https://github.com/WeltN24/react-web-component"><img alt="React Web Component Logo" src="https://raw.githubusercontent.com/WeltN24/react-web-component-style-loader/master/docs/images/react-web-component-logo.png" height="200">
   </a>
 </div>
 
@@ -9,6 +9,7 @@
 
 Adds CSS to web components created by [react-web-component](https://github.com/WeltN24/react-web-component) by injecting a <code>&lt;style&gt;</code> tag to the web component
 
+* [What is it, how does it work and when to use it](#what-is-it-how-does-it-work-and-when-to-use-it)
 * [Installation](#installation)
 * [Basic Usage](#basic-usage)
 * [Maintainers](#maintainers)
