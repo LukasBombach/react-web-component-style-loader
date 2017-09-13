@@ -11,7 +11,7 @@ Adds CSS to web components created by [react-web-component](https://github.com/W
 
 * [What is it, how does it work and when to use it](#what-is-it-how-does-it-work-and-when-to-use-it)
 * [Installation](#installation)
-* [Basic Usage](#basic-usage)
+* [Basic Usage with `react-web-component`](#basic-usage-with-react-web-component)
 * [Maintainers](#maintainers)
 
 ## What is it, how does it work and when to use it
@@ -28,14 +28,9 @@ In essence `react-web-component-style-loader` is a fork of [style-loader](https:
 yarn add react-web-component-style-loader --dev
 ```
 
-## Basic Usage
+## Basic Usage with `react-web-component`
 
 It's recommended to combine `react-web-component-style-loader` with the [`css-loader`](https://github.com/webpack/css-loader)
-
-**component.js**
-```js
-import './file.css'
-```
 
 **webpack.config.js**
 ```js
@@ -53,6 +48,30 @@ import './file.css'
   }
 }
 ```
+
+**App.js**
+```js
+import React from 'react';
+import './app.css';
+
+export default class App extends React.Component {
+  render() {
+    return <div>Hello World!</div>;
+  }
+}
+```
+
+**index.js**
+```js
+import React from 'react';
+import ReactWebComponent from 'react-web-component';
+import App from './App';
+import './index.css';
+
+ReactWebComponent.create(<App />, 'my-component');
+```
+
+Using the `react-web-component-style-loader` in your webpack config will make the loader gather all CSS and store it (in the bundle). `react-web-component` will find the CSS and use it in its shadow dom.
 
 ## Maintainers
 
